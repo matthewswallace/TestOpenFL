@@ -1,0 +1,18 @@
+-swf bin/swf/Main.swf
+-main Main
+-debug
+-D fdb
+-swf-version 11.1
+-cp src
+-swf-lib framework.swf
+-swf-lib frameworkassets.swf
+-swf-lib twitter.swf
+-lib actuate
+-lib bbmvc
+-lib tilelayer
+-lib openfl
+-lib swf
+-lib ExAM
+-lib nme
+
+-cmd openfl test build.xml flash -debug -verbose

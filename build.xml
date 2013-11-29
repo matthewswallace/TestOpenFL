@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<app title="{$project_name}"  
+		main="Main"  
+		version="0.0.1" 
+		company="Matthew Wallace"  />
+  
+	<set name="fullscreen" if="target_webos" />
+	<set name="fullscreen" if="target_ios" />
+	<set name="fullscreen" if="target_android" />
+
+ 	
+ 	<window width="1024" height="768" 
+ 		fps="30" orientation="landscape" 
+ 		resizable="false" background="0xffffff" />
+
+	<set name="BUILD_DIR" value="bin" />
+	<classpath name="src" ></classpath>
+	
+	<haxelib name="nme"></haxelib>
+	<haxelib name="actuate" ></haxelib>
+	<haxelib name="bbmvc"></haxelib>
+	<haxelib name="tilelayer"></haxelib>
+	<haxelib name="swf"></haxelib>
+	<haxelib name="ExAM"></haxelib>
+
+	<ndll name="std" ></ndll>
+	<ndll name="regexp" ></ndll>
+	<ndll name="zlib" ></ndll>
+	<ndll name="openfl" haxelib="openfl" ></ndll>
+	
+	<assets path="assets" include="*" />
+	<assets path="sounds" rename="assets/sounds" type="music" include="*" />
+
+	<library path="framework.swf"/>
+	<library path="frameworkassets.swf"/>
+	<library path="twitter.swf"/>
+
+</project>
